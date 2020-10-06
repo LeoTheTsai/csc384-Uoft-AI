@@ -1,0 +1,21 @@
+1:
+Weighted A star doesnt improve with time because the bias will shift. Initially,
+the weight is set at a certain number and decrement when pruning, but with more
+time, eventually the weight will become 1 and lose its effect. Therefore, there
+is no significant improvement.
+
+
+
+2:
+The min_move_heuristic falls short when there are obstacle lies between the
+goal car and the exit. However, the min_move_heuristic still be consider admissible
+because the h(n) is always less than or equal to the h^*(n).
+
+
+3:
+The improve version of heuristic from min_move is better because now it takes
+into the account of the obstacle where adding an extra cost to get through the
+obstacle lies between the goal car and exit. The alternative still consider as
+admissible heuristic because its h(n) is also less than or equal to the h^*(n).
+Also, comparing the min_move to the alternative, even though both are admissible,
+the alternative heuristic function gives more insight than the min_move.
