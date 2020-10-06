@@ -1,1 +1,1 @@
-# csc384-Uoft
+# csc384-University of Toronto
